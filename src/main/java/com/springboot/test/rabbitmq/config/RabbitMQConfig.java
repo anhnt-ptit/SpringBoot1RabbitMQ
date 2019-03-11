@@ -26,7 +26,7 @@ public class RabbitMQConfig {
     @Value("${test1.routing.key}")
     private String test1KeyName;
     
-    @Bean("test1Queue")
+    /*@Bean("test1Queue")
     public Queue test1Queue() {
         return new Queue(test1QueueName);
     }
@@ -39,7 +39,7 @@ public class RabbitMQConfig {
 	@Bean
 	public Binding topicBinding() {
 		return BindingBuilder.bind(test1Queue()).to(test1Exchange()).with(test1KeyName);
-	}
+	}*/
 
     /*@Bean
     public SimpleRabbitListenerContainerFactory myRabbitListenerContainerFactory() {
